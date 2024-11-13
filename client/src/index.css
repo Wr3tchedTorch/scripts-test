@@ -154,20 +154,20 @@ body {
   background-color: #5a6268;
 }
 
-.product-list {
+.list {
   margin-top: 20px;
 }
 
-.product-list h2 {
+.list h2 {
   color: #007bff;
   margin-bottom: 10px;
 }
 
-.product-list ul {
+.list ul {
   list-style-type: none;
 }
 
-.product-item {
+.item {
   background-color: #ffffff;
   padding: 15px;
   border: 1px solid #ddd;
@@ -176,11 +176,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.product-item p {
+.item p {
   margin-bottom: 5px;
 }
 
-.product-item strong {
+.item strong {
   color: #007bff;
 }
 

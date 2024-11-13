@@ -1,0 +1,35 @@
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 1.5rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffb400;
+    /* Cor para hover nos links */
+}
+
+/* Estilo para o link da página atual */
+.active-link {
+    color: #ffb400;
+    border-bottom: 2px solid #ffb400;
+}
