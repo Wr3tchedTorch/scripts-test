@@ -16,6 +16,8 @@ No `server`, execute:
 npm run dev
 ```
 
+Prontinho! agora é só abrir o site no link http://localhost:3000/
+
 #### Testes automáticos
 O back-end possui testes automáticos implementados utilizando a biblioteca de testes nativa do node.
 
