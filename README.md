@@ -1,7 +1,9 @@
 ### Prova de Scripts CRUD de produtos - Eric Moura
 
 #### Como executar:
-Abra os diretórios `client` e `server` pelo terminal e rode o seguinte comando em ambos:
+Baixe o código e abra os diretórios `client` e `server` pelo terminal. 
+
+Rode o seguinte comando em ambos:
 ```
 npm i
 ```
