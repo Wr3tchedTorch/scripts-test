@@ -2,6 +2,7 @@ import express from "express";
 import * as dotenv from "dotenv";
 import { existsSync, unlinkSync } from "fs";
 import productRoute from "./routes/produto";
+import userRoute from "./routes/user";
 import cors from 'cors';
 
 dotenv.config();
@@ -16,5 +17,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/produtos/", productRoute);
+app.use("/usuarios/", userRoute);
 
 export default app;

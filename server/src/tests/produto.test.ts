@@ -51,7 +51,7 @@ describe("Testing the Produto CRUD router", () => {
             const res = await request(app)
                 .get("/produtos/")
                 .expect("Content-Type", /json/)
-                .expect(200);
+                .expect(200);                
 
             assert.ok(Array.isArray(res.body), "Resposta deveria ser um array de produtos");
         });
