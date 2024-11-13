@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #007bff;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  /* Garante que a largura não ultrapasse 100% do contêiner */
+  box-sizing: border-box;
+  resize: vertical;
+  /* Permite redimensionamento apenas verticalmente */
+}
+
+.form-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button.save {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-container button.save:hover {
+  background-color: #218838;
+}
+
+.form-container button.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.form-container button.cancel:hover {
+  background-color: #c82333;
+}
+
+/* Alinhar botões lado a lado e garantir que ocupem 50% da largura */
+.form-container .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container .button-container button {
+  width: 48%;
+  /* 50% menos o espaçamento entre os botões */
+  font-size: 1rem;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.product-list {
+  margin-top: 20px;
+}
+
+.product-list h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.product-list ul {
+  list-style-type: none;
+}
+
+.product-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-item p {
+  margin-bottom: 5px;
+}
+
+.product-item strong {
+  color: #007bff;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.delete-button:disabled {
+  background-color: #f5c6cb;
+  cursor: not-allowed;
+}
+
+.success-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  max-width: 250px;
+  text-align: center;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-container input,
+  .form-container select {
+    padding: 8px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .save-button,
+  .cancel-button {
+    width: 100%;
+  }
+
+  .product-item {
+    padding: 10px;
+  }
+
+  .success-message {
+    right: 10px;
+    bottom: 10px;
+    padding: 8px;
+  }
+}
